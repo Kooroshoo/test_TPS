@@ -19,6 +19,8 @@ void AShooterCharacter::BeginPlay()
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
 	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("Weapon"));
 	Gun->SetOwner(this);
+
+	Health = MaxHealth;
 	
 }
 
@@ -41,6 +43,22 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAction(TEXT("JumpAction"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("FireAction"), EInputEvent::IE_Pressed, this, &AShooterCharacter::Shoot);
 
+}
+
+float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
+{
+	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	
+	DamageToApply = FMath::Min(Health, DamageToApply);
+	Health -= DamageToApply;
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), Health);
+
+	return DamageToApply;
+}
+
+bool AShooterCharacter::IsDead() const
+{
+	return Health <= 0;
 }
 
 void AShooterCharacter::MoveForward(float AxisValue)
