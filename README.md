@@ -1,6 +1,9 @@
 # test_TPS
  A Third Person Shooter with high quality character animation / movement, and destructable environmentns and AI.
 
+![gif](https://user-images.githubusercontent.com/26629624/103174505-00f5c100-4863-11eb-85de-b3820bffce7d.gif)
+ 
+ - Link to fill video : [Link](https://www.mixamo.com/#/?page=1&query=gas+mask&type=Character)
 
 #
 Unreal Version: 4.25.4
