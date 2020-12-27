@@ -16,4 +16,7 @@ class TEST_TPS_API UBTTask_ClearBlackboardValue : public UBTTask_BlackboardBase
 	
 public:
 	UBTTask_ClearBlackboardValue();
+
+protected:
+	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 };
