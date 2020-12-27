@@ -3,7 +3,7 @@
 
 ![gif](https://user-images.githubusercontent.com/26629624/103174505-00f5c100-4863-11eb-85de-b3820bffce7d.gif)
  
- - Link to fill video : [Link](https://www.mixamo.com/#/?page=1&query=gas+mask&type=Character)
+ - Link to the full video : [Link](https://www.youtube.com/watch?v=91_HMdJLOF0&feature=youtu.be&ab_channel=Kooroshoo)
 
 #
 Unreal Version: 4.25.4
