@@ -14,3 +14,5 @@ Unreal Version: 4.25.4
 - Advanced Locomotion System V4 from Unreal Marketplace :: [Link](https://www.unrealengine.com/marketplace/en-US/product/advanced-locomotion-system-v1) 
 
 - Animation Starter Pack from Unreal Marketplace : [Link](https://www.unrealengine.com/marketplace/en-US/product/animation-starter-pack)
+
+- APEX Destruction : [Link](https://docs.unrealengine.com/en-US/InteractiveExperiences/Physics/Apex/index.html)
